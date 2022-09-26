@@ -1,0 +1,116 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #da6727;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(209, 123, 42);
+}
+
+.bg-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('https://pbs.twimg.com/media/E2xK73tVgAktY1q?format=jpg&name=4096x4096');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://pbs.twimg.com/media/EqcRDDtUUAAujOV?format=jpg&name=4096x4096');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.bg-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://pbs.twimg.com/media/FHbvyiVagAEAiXV?format=jpg&name=large');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.bg-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://pbs.twimg.com/media/FWLHbQ0acAAdZ6H?format=jpg&name=large');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+.bg-5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://pbs.twimg.com/media/FG3oeuPVkAEDCqy?format=jpg&name=4096x4096');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 20%;
+}
+
+.bar>div:nth-child(1) {
+    background-color: #181818;
+    box-shadow: 6px 0 4px -4px rgb(8, 8, 8);
+    padding: 12px;
+    border-radius: 5%;
+    z-index: 2;
+}
+
+.bar>div:nth-child(2) {
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+@media only screen and (min-width: 1080px) {
+    .bar {
+        display: grid;
+        grid-template-columns: 64px 100%;
+    }
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 320px) {
+    .bar {
+        display: grid;
+        grid-template-columns: 64px auto;
+    }
+}
+
+.message-me {
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: 32px 32px 32px;
+    /* column-gap: 55px; */
+    /* not detected by jest, switching to gap instead */
+    gap: 0px 55px;
+    margin-bottom: 12px;
+}
+
+.message-me>label {
+    display: flex;
+    align-items: center;
+}
+
+.message-me>input {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 4px;
+    border: 1px solid #fff;
+}
+
+.message-me-submit {
+    display: grid;
+    justify-content: flex-end;
+}
+
+.message-me-submit>button {
+    width: fit-content;
+}
